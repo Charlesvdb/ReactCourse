@@ -1,38 +1,17 @@
-console.log("app.js is running")
+// // import "./utils.js"
+// import subtract, {square, add} from "./utils.js"
 
-//JSX - Javascript XML
-const app = {
-    title: "Indecision app",
-    subtitle: "Put your life",
-    options: ["One","Two"]
-}
+// console.log("app.js is running")
+// console.log(square(4))
+// console.log(add(100,23))
+// console.log(subtract(100,81))
+// console.log(anythingIWant(100,81))
 
-const template = (
-<div>
-    <h1>{app.title}</h1>
-    {app.subtitle && <p>{app.subtitle}</p>}
-    <p>{app.options.length > 0 ? "Here are your options" : "No options" }</p>
-    <ol>
-        <li>Item one</li>
-        <li>Item two</li>
-    </ol>
-</div>
-)
+import isSenior, {isAdult, canDrink} from "./person.js"
+
+console.log(isAdult(17))
+console.log(isAdult(21))
+console.log(isSenior(64))
 
 
-let count = 0
 
-const addOne = () => {
-    console.log("Addone")
-}
-
-const templateTwo = (
-    <div>
-        <h1>Count: {count}</h1>
-        <button id="my-id" className="button" onClick={() => addOne}> +1</button>
-    </div>
-)
-
-const appRoot = document.getElementById("app")
-
-ReactDOM.render(templateTwo,appRoot)
