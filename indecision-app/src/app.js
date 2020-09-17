@@ -7,11 +7,20 @@
 // console.log(subtract(100,81))
 // console.log(anythingIWant(100,81))
 
-import isSenior, {isAdult, canDrink} from "./person.js"
+// import react from "validator"
+// import isSenior, {isAdult, canDrink} from "./person.js"
 
-console.log(isAdult(17))
-console.log(isAdult(21))
-console.log(isSenior(64))
+import React from "react"
+import ReactDOM from "react-dom"
+
+const template = React.createElement("p", {}, "testing 123")
+ReactDOM.render(template,document.getElementById("app"))
+
+// console.log(isAdult(17))
+// console.log(isAdult(21))
+// console.log(isSenior(64))
+
+
 
 
 
