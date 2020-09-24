@@ -7,3 +7,14 @@ body {
     font-size: 1.6rem
 }
 
+button {
+    cursor: pointer
+}
+
+button:disabled {
+    cursor: default
+}
+
+.is-active {
+    font-weight: bold
+}
